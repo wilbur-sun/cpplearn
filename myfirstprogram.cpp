@@ -9,11 +9,21 @@ int main() {
   cout << "Hello World!\n";
   cout << "I am learning C++." << endl;
 
-  int myNum = 15;
-  double myFolatNum = 5.99;
-  char myLetter = 'D';
-  string myText = "Hello";
-  bool myBoolean = true;
+  int myNum = 15;             // Integer (whole number)
+  float myFolatNum = 5.99;    // Floating point number
+  double myDoubleNum = 5.98;  // Floating point number
+  char myLetter = 'D';        // Character
+  string myText = "Hello";    // String
+  bool myBoolean = true;      // Boolean
+
+  // scientific number with an "e" to indicate the power of 10
+  float f1 = 35e3;
+  double d1 = 12E4;
+
+  char a = 65, b = 66, c = 67;
+  cout << a << b << c << endl;
+
+  cout << myText << endl;
 
   int myAge = 34;
   cout << "My age " << myAge << " years old." << endl;
@@ -30,10 +40,14 @@ int main() {
   // unchangeable and read-only variable value
   const float PI = 3.14;
 
-  int num;
+  int num1, num2;
+  int sum;
   cout << "Type a number: "; // Type a number and press enter
-  cin >> num; // Get user input from keyboard
-  cout << "Your number is: " << num << endl;
+  cin >> num1; // Get user input from keyboard
+  cout << "Type another number: ";
+  cin >> num2;
+  sum = num1 + num2;
+  cout << "Sum is: " << sum << endl;
 
   return 0;
 }

@@ -12,3 +12,8 @@ File Operations
 
 Command
   rm <filename>
+
+Git Usage
+1. Create a git repository from github.com
+2. git remote add origin https://github.com/wilbur-sun/cpplearn.git
+3. git add / git commit / git push origin master

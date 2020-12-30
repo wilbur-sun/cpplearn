@@ -1,0 +1,14 @@
+Vim Usage
+
+File Operations
+  :x   save and exit
+  :q   quit when no changes
+  :q!  quit without saving
+  :w   save changes (then you may :q to quit)
+  :wq  save changes then quit
+
+  Esc  return to Command mode
+  i    insert mode
+
+Command
+  rm <filename>

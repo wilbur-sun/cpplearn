@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>  // it is usually a good idea to do so directly even if not strictly necessary for a successful build
 using namespace std;
 
 int main() {
@@ -48,6 +49,18 @@ int main() {
   cin >> num2;
   sum = num1 + num2;
   cout << "Sum is: " << sum << endl;
+
+  string firstName = "Wilbur";
+  string lastName = "Sun";
+  string fullName = firstName.append(" ").append(lastName);
+  cout << fullName << endl;
+  cout << "The length of the text string is: " << fullName.size() << endl;
+
+  cout << "Type your full name: ";
+  //  cin >> fullName;  this considers a space (whitespace, tabs, etc) as a terminating character
+  cin.ignore();  // otherwise getline() in below line may not work as we called cin before
+  getline (cin, fullName);
+  cout << "Your name is: " << fullName << endl;
 
   return 0;
 }

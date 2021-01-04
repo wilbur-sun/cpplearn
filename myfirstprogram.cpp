@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>  // it is usually a good idea to do so directly even if not strictly necessary for a successful build
+#include <cmath>
 using namespace std;
 
 int main() {
@@ -61,6 +62,14 @@ int main() {
   cin.ignore();  // otherwise getline() in below line may not work as we called cin before
   getline (cin, fullName);
   cout << "Your name is: " << fullName << endl;
+  
+  // C++ Math
+  cout << "sqrt(64)=" << sqrt(64) << endl;;
+  cout << "round(2.6)=" << round(2.6) << endl;
+  cout << "log(2)=" << log(2) << endl;
+  
+  // Boolean
+  cout << "(5 >= 1)=" << (5>=1) << endl; 
 
   return 0;
 }

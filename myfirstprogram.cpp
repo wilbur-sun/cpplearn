@@ -71,5 +71,28 @@ int main() {
   // Boolean
   cout << "(5 >= 1)=" << (5>=1) << endl; 
 
+  int time = 20;
+  string result = (time < 18) ? "Good day." : "Good evening.";
+  cout << result << endl;
+
+  int day = 2;
+  switch (day) {
+    case 6:
+      cout << "Today is Saturday" << endl;
+      break;
+    case 7:
+      cout << "Today is Sunday" << endl;
+      break;
+    default:
+      cout << "Looking forward to the Weekend" << endl;
+  }
+
+  for (int i = 0; i < 10; i++) {
+    if (i == 4) {
+      break;  // continue;
+    }
+    cout << i << "\n";
+  }
+  
   return 0;
 }

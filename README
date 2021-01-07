@@ -22,7 +22,10 @@ Command
 Git Usage
 1. Create a git repository from github.com
 2. git remote add origin https://github.com/wilbur-sun/cpplearn.git
-3. git add / git commit / git push origin master
+3. git status / git add / git commit -m / git push origin master wilbur.sun@outlook.com/sw..4
 
 Compile CPP file
   g++ <.cpp file> : default output is ./a.out
+
+
+

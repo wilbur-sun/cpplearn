@@ -94,5 +94,23 @@ int main() {
     cout << i << "\n";
   }
   
+  string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+  for(int i = 0; i < 4; i++) {
+    cout << i << ": " << cars[i] << endl;
+  }
+
+  // C++ Referrence
+  string food = "Pizza";
+  string &meal = food;
+  cout << "&meal: " << &meal << " meal:" << meal << "\n";  
+
+  // C++ Pointers
+  string* ptr = &meal; // The type of the pointer has to match the type of the variable you're working with
+  cout << "ptr = &meal: " << ptr << "\n";  
+  cout << "*ptr: " << *ptr << "\n"; // * sign acts as a dereference operator
+
+  *ptr = "Hamburger";
+  cout << "food: " << food << "\n";
+
   return 0;
 }

@@ -3,6 +3,9 @@ Workspace from Ubuntu wilbur@DESKTOP-I6DGSWG
 Vim Usage
 
 File Operations
+
+  i    insert mode
+
   :x   save and exit
   :q   quit when no changes
   :q!  quit without saving
@@ -10,7 +13,6 @@ File Operations
   :wq  save changes then quit
 
   Esc  return to Command mode
-  i    insert mode
 
   G           go to end line of file
   nG          go to n line of file
@@ -23,6 +25,8 @@ Git Usage
 1. Create a git repository from github.com
 2. git remote add origin https://github.com/wilbur-sun/cpplearn.git
 3. git status / git add / git commit -m / git push origin master / wilbur.sun@outlook.com/sw..4
+
+Tip: if push fails, check network connection, disconnect VPN if any
 
 Compile CPP file
   g++ <.cpp file> : default output is ./a.out

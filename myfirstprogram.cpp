@@ -3,6 +3,9 @@
 #include <cmath>
 using namespace std;
 
+void myFunction(string name = "Wilbur Sun", int age = 12);
+void swapNums(int &x, int &y);
+
 int main() {
   // Learning from site https://www.w3schools.com/cpp/default.asp
 
@@ -111,6 +114,31 @@ int main() {
 
   *ptr = "Hamburger";
   cout << "food: " << food << "\n";
+  
+  // C++ Functions
+  myFunction(fullName, 30);
+  myFunction("April"); // get default argument from function declare
+  myFunction();
+
+  int firstNum = 10;
+  int secondNum = 20;
+
+  cout << "Before swap: " << "\n";
+  cout << firstNum << " " << secondNum << "\n";
+  swapNums(firstNum, secondNum);
+  cout << "After swap: " << "\n";
+  cout << firstNum << " " << secondNum << "\n";
 
   return 0;
 }
+
+void myFunction(string name, int age) {
+  cout << "I just got executed with name " << name << " in age " << age << "!\n"; 
+}
+
+void swapNums(int &x, int &y) {
+  int z =x;
+  x = y;
+  y = z;
+}
+

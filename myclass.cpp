@@ -4,6 +4,10 @@ using namespace std;
 
 class MyClass {       // The class
   public:             // Access specifier
+    MyClass() {
+      cout << "My Class Constructor" << "\n";
+    }
+
     int myNum;        // Attribute (int variable)
     string myString;  // Attribute (string variable)
     
@@ -23,12 +27,38 @@ class Car {
     string brand;
     string model;
     int year;
+    Car(){}
+    Car(string x, string y, int z);
+
     int speed(int maxSpeed);
 };
+
+// Constructor definition outside the class
+Car::Car(string x, string y, int z) {
+  brand = x;
+  model = y;
+  year = z;
+}
 
 int Car::speed(int maxSpeed) {
   return maxSpeed;
 }
+
+class Employee {
+  private:
+    // Private attribute
+    int salary;
+
+  public:
+    // Setter
+    void setSalary(int s) {
+      salary = s;
+    }
+    // Getter
+    int getSalary() {
+      return salary;
+    }
+};
 
 int main() {
   MyClass myObj;      // Create an object of MyClass
@@ -60,6 +90,13 @@ int main() {
   cout << carObj1.brand << " " << carObj1.model << " " << carObj1.year << "\n";
   cout << carObj2.brand << " " << carObj2.model << " " << carObj2.year << "\n";
   cout << "Max speed " << carObj1.speed(200) << "\n";  // Call the method with an argument
+
+  Car carObj3("BMW", "X5", 1999);
+  cout << carObj3.brand << " " << carObj3.model << " " << carObj3.year << "\n";
+
+  Employee myEmp;
+  myEmp.setSalary(50000);
+  cout << myEmp.getSalary() << "\n";
 
   return 0;
 }
